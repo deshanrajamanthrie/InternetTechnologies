@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<form>
+    <lable for="fName">First name:</lable>
+    <input type="text" id="fName" name="fname">
+</form>
+<hr>
+<input type="button"
+       value="Add to Cart">
+<hr>
+<input type="checkbox" id="passed"
+       name="passed" checked>
+<hr>
+<input type="date"
+       id="start" name="trip-start" value="2018-07-22"
+       min="2018-01-1" max="2018-12-31">
+
+<hr>
+<input type="datetime-local"
+       id="meeting -time"
+       name="meeting -time"
+       value="2018 -06-12T19:30"
+       min="2018-06-07T00:00"
+       max="2018-06-14T00:00">
+<hr>
+<input type="email"
+       placeholder="type This"
+       id="email">
+<br>
+<hr>
+<input type="file"
+       id="avatr" name="avatar"
+       accept="E:\Pictures\Pictures\Saved Pictures\me2PNG.PNG">
+
+<hr>
+<input type="image" id="image" alt="market"
+       src=".idea/assets/market.PNG">
+
+<hr>
+<input type="month" id="monthPicker"
+       name="start"
+       min="2023-1"
+       max="2023-12">
+<hr>
+<div>
+    <lable for="name">Name</lable>
+    <input type="text" name="name" id="name">
+</div>
+<hr>
+
+
+<select name="countries" id="countries">
+    <option value=" ">Select Your Coutrie</option>
+    <option value="UK">UK</option>
+    <option value="England">England</option>
+    <option value="USA">USA</option>
+</select>
+
+<hr>
+<textarea id="Message" name="Message"
+          rows="5" cols="33" placeholder="Your Meassage">
+
+</textarea>
+<hr>
+<button type="button">Add to Cart</button>
+<hr>
+<form>
+    <fieldset>
+        <legend>Choose Your Monster</legend>
+        <br>
+        <input type="radio" id="kraken" name="monster" value="K">
+        <label for="kraken">Kraken</label><br>
+
+        <input type="radio" id="Sasquatch" name="monster" value="S">
+        <label for="sasquatch">sasquatch</label><br>
+
+        <input type="radio" id="Mothman" name="monster" value="M">
+        <label for="sasquatch">sasquatch</label><br>
+    </fieldset>
+
+    <br><br>
+    <hr>
+
+
+</form>
+<form>
+    <input list="ice-Cream-flavours" id="Ilist" name="IceCream Choice">
+    <label for="Ilist"> IceCream Choice</label><br>
+
+    <datalist id="ice-Cream-flavours">
+        <option value="Chocolate"></option>
+        <option value="Vanila"></option>
+        <option value="Strwaberry"></option>
+        <option value="Moose"></option>
+    </datalist>
+</form>
+<br><br>
+<hr>
+<form>
+    <label for="Programming">Main Programming Languages:</label>
+    <input list="Programming">
+
+    <datalist id="Programming" name="Programming">
+        <option value="Java"></option>
+        <option value="C++"></option>
+        <option value="C#"></option>
+        <option value="Python"></option>
+    </datalist>
+</form>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="a" value="50"/>+
+    <input type="number" id="b" name="b" value="10"/>=
+    <output name="result" for="a b">60</output>
+</form>
+
+<hr>
+<form><label for="Programming languages">Programmimg Languages Front End & BackEnd </label><br>
+    <br>
+    <select name="Programming languages" id="Programming languages">
+        <optgroup label="BackEnd">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+        </optgroup>
+        <optgroup label="Front_End">
+            <option value="Html">Html</option>
+            <option value="JS">JS</option>
+            <option value="CSS">CSS</option>
+            <option value="React">React</option>
+        </optgroup>
+
+    </select>
+</form>
+<form action=".idea/assets/Deshan.txt">
+    <label for="firstName"> First Name</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label for="LastName"> Last Name</label><br>
+    <input type="text" id="LastName" name="LastName"><br>
+    <input type="submit" value="Submit">
+</form>
+<br><br>
+<hr>
+<form action="table.html" target="_self">
+    <label for="1fname">First Name</label>
+    <input type="text" id="1fname" name="1fName">
+    <label for="2ndName"> Second Name</label>
+    <input type="text" id="2ndName" name="2nd Name">
+    <input type="submit" value="Submit">
+
+</form>
+
+
+
+</body>
+</html>
